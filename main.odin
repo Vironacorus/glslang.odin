@@ -55,7 +55,7 @@ main :: proc()
 
     spirv : []u32 = glslang.program_SPIRV_get_buffer(program);
 
-    len : int = len(spirv);
+    len : int = len(spirv) * size_of(u32);
     code : ^u32 = &spirv[0];
 
 
