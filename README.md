@@ -5,14 +5,14 @@ Sample code (main.odin):
 
 ```odin
 shader_code := cstring(
-    `
+    \`
     #version 450
     layout(location = 0) out vec4 col;
 
     void main()
     {
         col = vec4(1);
-    }`);
+    }\`);
 
     input := glslang.Input{
         language = glslang.Source.Glsl,
